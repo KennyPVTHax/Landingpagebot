@@ -1,9 +1,11 @@
 .env
 .venv/
 __pycache__/
-*.pyc
 .pytest_cache/
+*.pyc
 *.db
 *.sqlite3
+.private_uploads/
 uploads/
 *.apk
+.owner_templates/

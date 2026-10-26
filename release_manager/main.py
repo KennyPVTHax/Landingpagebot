@@ -1,1 +1,3 @@
-from .web import app
+from .web import create_app
+
+app = create_app()

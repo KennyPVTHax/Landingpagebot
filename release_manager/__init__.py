@@ -1,1 +1,1 @@
-"""Private Telegram-managed release platform skeleton."""
+"""Landingpagebot management service."""

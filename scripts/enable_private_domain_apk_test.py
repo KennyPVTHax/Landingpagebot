@@ -127,7 +127,7 @@ else:
     result=subprocess.run(["openssl","passwd","-apr1","-stdin"],
                           input=password+"\n",capture_output=True,text=True,check=True)
     creds.write_text("apkpreview:"+result.stdout.strip()+"\n")
-    creds.chmod(0o640)
+    creds.chmod(0o644)  # nginx workers must be able to read the hash file
     pwfile=root/".test-access-password"
     pwfile.write_text("Username: apkpreview\nPassword: "+password+"\n")
     pwfile.chmod(0o600)
